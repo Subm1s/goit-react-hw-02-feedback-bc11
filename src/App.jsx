@@ -6,16 +6,10 @@ import Statistics from "./components/Statistics";
 
 class App extends Component {
 
-    static defaultProps ={
-        initialValueGood: 0,
-        initialValueNeutral: 0,
-        initialValueBad: 0
-    }
-
 state = {
-  good: this.props.initialValueGood,
-  neutral: this.props.initialValueNeutral,
-  bad: this.props.initialValueBad
+  good: 0,
+  neutral: 0,
+  bad: 0
 }
 
 handleInc = event => {
